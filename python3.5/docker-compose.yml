@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+    python35:
+      build:
+        context: .
+        dockerfile: ./dockerfile
+      volumes:
+        - .:/home/python/app
