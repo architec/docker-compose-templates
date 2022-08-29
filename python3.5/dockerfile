@@ -6,6 +6,6 @@ RUN pip install --no-cache-dir --upgrade pip && \
 WORKDIR /home/python/app
 
 # infinite loop
-# ENTRYPOINT ["tail", "-f", "/dev/null"]
+ENTRYPOINT ["tail", "-f", "/dev/null"]
 
-CMD ["python", "example.py"]
+# CMD ["python", "example.py"]
